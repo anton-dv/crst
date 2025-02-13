@@ -1,0 +1,33 @@
+@use "../../../sass/colors" as colors;
+@use "../../../sass/durations" as durations;
+@use "../../../sass/bezier" as bezier;
+
+.search {
+  padding-left: 26px;
+  height: 22px;
+  border-radius: 20px;
+  font-weight: 700;
+  width: 100px;
+  border: none;
+  outline: none;
+}
+
+.search--open {
+    width:200px;
+}
+
+.search__button {
+  cursor: pointer;
+  position: absolute;
+  left: 7px;
+  top: 5px;
+  transition: durations.$fast-duration bezier.$bezier-default color;
+}
+
+.search__button--dark {
+  color: colors.$dark;
+}
+
+.search__button--blue {
+  color: colors.$blue;
+}

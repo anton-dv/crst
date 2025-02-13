@@ -1,0 +1,13 @@
+.area-card {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   height: 100%;
+   min-height: 100px;
+   justify-content: space-between;
+}
+
+.area-card__button {
+   position: absolute;
+   bottom: 15px;
+}

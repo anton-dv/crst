@@ -1,0 +1,31 @@
+@use '../../../sass/colors' as colors;
+@use '../../../sass/durations' as durations;
+@use '../../../sass/bezier' as bezier;
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    transition: durations.$fast-duration bezier.$bezier-default background-color;
+}
+
+.header--dark {
+    background-color: colors.$dark;
+}
+
+.header--blue {
+    background-color: colors.$blue;
+}
+
+.header__customization {
+    display: flex;
+    align-items: center;
+    gap: 15px
+}
+

@@ -1,0 +1,22 @@
+@use "../../../sass/colors" as colors;
+@use '../../../sass/durations' as durations;
+@use '../../../sass/bezier' as bezier;
+
+.area-list__row {
+    padding-block: 15px;
+}
+
+.area-list__group {
+    padding-block: 5px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    transition: durations.$fast-duration bezier.$bezier-default border-bottom-color;
+}
+
+.area-list__group--dark {
+    border-bottom-color: colors.$dark;
+}
+
+.area-list__group--blue {
+    border-bottom-color: colors.$blue;
+}

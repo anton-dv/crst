@@ -1,0 +1,19 @@
+@use "../../../sass/colors" as colors;
+@use '../../../sass/durations' as durations;
+@use '../../../sass/bezier' as bezier;
+
+
+.section-header {
+    padding-block: 5px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    transition: durations.$fast-duration bezier.$bezier-default border-bottom-color;
+}
+
+.section-header--dark {
+    border-bottom-color: colors.$dark;
+}
+
+.section-header--blue {
+    border-bottom-color: colors.$blue;
+}

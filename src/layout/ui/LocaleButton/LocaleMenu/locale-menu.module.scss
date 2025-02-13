@@ -1,0 +1,55 @@
+@use '../../../../sass/colors' as colors;
+@use '../../../../sass/durations' as durations;
+@use '../../../../sass/bezier' as bezier;
+
+.locale-menu {
+    position: absolute;
+    top: 43px;
+    right: -200px;
+    border-radius: 6px;
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    padding: 10px;
+    transition: .1s ease-in-out right;
+}
+
+.locale-menu--dark {
+    border-color: colors.$dark;
+}
+
+.locale-menu--blue {
+    border-color: colors.$blue;
+}
+
+.locale-menu--open {
+    right: -27px;
+}
+
+.locale-menu__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+
+    li {
+        width: 100%;
+    }
+}
+
+.locale-menu__button {
+    width: 100%;
+    text-align: start;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgb(54, 54, 54); 
+    cursor: pointer;
+
+    &:hover {
+        color: rgb(184, 39, 39);
+    }
+}

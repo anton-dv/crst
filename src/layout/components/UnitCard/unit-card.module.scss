@@ -1,0 +1,11 @@
+.unit-card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 100%;
+}
+
+.unit-card__button {
+    position: absolute;
+    bottom: 15px;
+}

@@ -1,0 +1,74 @@
+@use "../sass/colors" as colors;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ant-switch:hover:not(.ant-switch-disabled),
+.ant-switch.ant-switch-checked:hover:not(.ant-switch-disabled),
+.ant-switch.ant-switch-checked,
+.ant-switch {
+  background-color: white;
+}
+
+.ant-switch .ant-switch-handle::before {
+  box-shadow: none;
+  background-color: colors.$dark;
+}
+
+.ant-switch-checked .ant-switch-handle::before {
+  background-color: colors.$blue;
+}
+
+.ant-card {
+  height: 100%;
+}
+
+.ant-card .ant-card-body {
+  padding: 15px;
+  height: 100%;
+}
+
+h3 {
+  line-height: 19px;
+  font-size: 19px;
+  color: rgb(54, 54, 54);
+}
+
+html {
+  min-height: 100%;
+  overflow-x: hidden;
+  color: rgb(44, 44, 44);
+}
+
+body,
+#root {
+  position: relative;
+  min-height: 100vh;
+}
+
+#root {
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.breadcrumb-link {
+  color: rgba(0, 0, 0, 0.45);
+  transition: color 0.2s;
+  padding: 0 4px;
+  border-radius: 4px;
+  height: 22px;
+  display: inline-block;
+  margin-inline: -4px;
+  cursor: pointer;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.88);
+    background-color: rgba(0, 0, 0, 0.06);
+  }
+}

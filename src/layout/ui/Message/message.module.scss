@@ -1,0 +1,15 @@
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.message__text {
+  font-size: 80px;
+}
+
+.message__second--text {
+  font-size: 30px;
+}
